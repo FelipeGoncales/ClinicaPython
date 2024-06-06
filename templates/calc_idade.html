@@ -8,7 +8,7 @@
   <body>
     <div>
       <h1>Informe a espécie do seu animal e sua idade</h1>
-      <form method="POST">
+      <form action='/calulando-idade' method='post'>
         <label for="animal">Espécie (gato ou cachorro):</label>
         <input type="text" id="animal" name="animal" required>
         <br>
@@ -21,5 +21,7 @@
         <h2>{{ result }}</h2>
       {% endif %}
     </div>
+
+    <a href="/pagina-inicial">Voltar</a>
   </body>
 </html>

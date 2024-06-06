@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <h2>Perfil</h2>
+    {% for info in login %}
+    <div>
+        <p>Usuário: {{ info[1] }}</p>
+        <p>Telefone: {{ info[2] }}</p>
+        <p>Código: {{ info[0] }}</p>
+        <p>Nome do Animal: {{ info[3] }}</p>
+        <p>Espécie: {{ info[4] }}</p>
+        <p>Raça: {{ info[5] }}</p>
+        <a href="/editar_login/{{ info[0] }}">Editar</a>
+    </div>
+    {% endfor %}
+    <h2>Agendamentos</h2>
+        {% for agenda in agendas %}
+        <div>
+            <p>Tutor: {{ agenda[1] }}</p>
+            <p>Animal: {{ agenda[2] }}</p>
+            <p>Data: {{ agenda[3] }}</p>
+            <p>Horário: {{ agenda[4] }}</p>
+            <p>Sintomas: {{ agenda[5] }}</p>
+            <a href="/editar_agendamento/{{ agenda[0] }}">Editar</a>
+            <a href="/cancelar_agendamento/{{ agenda[0] }}">Cancelar</a>
+        </div>
+        {% endfor %}
+    <a href="/agendamento">Novo Agendamento</a>
+
+    <a href="/calculo-idade"><button>Calcular Idade do Seu Animal</button></a>
+    <a href="/calc-soro-medicamento"><button>Calcular Quantidade de Soto e Medicamento</button></a>
+</body>
+</html>

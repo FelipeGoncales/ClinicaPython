@@ -4,13 +4,14 @@ app = Flask(__name__)
 
 def calcular_volume(desidratacao, peso):
     if desidratacao == 'leve':
-        return 50 * peso
+        volume = 50 * peso
     elif desidratacao == 'moderada':
-        return 75 * peso
+        volume = 75 * peso
     elif desidratacao == 'grave':
-        return 100 * peso
+        volume = 100 * peso
     else:
-        return 0
+        volume = 0
+    return render_template('calc-medicamento-soro.html', volume=volume)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -19,7 +20,7 @@ def index():
     if request.method == 'POST':
         if 'peso_fluidoterapia' in request.form:
             grau_desidratacao = request.form['desidratacao']
-            peso = float(request.form['peso_fluidoterapia'])
+            peso = float(round(request.form['peso_fluidoterapia']),2)
             volume = calcular_volume(grau_desidratacao, peso)
         if 'peso_medicamento' in request.form:
             peso = float(request.form['peso_medicamento'])

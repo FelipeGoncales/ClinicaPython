@@ -8,26 +8,26 @@
 <body>
     <div>
         <h1>Cadastro</h1>
-        <form action="cadastrar" method="POST">
+        <form action="{{ url_for('editar_login', codigo=login[0]) if login else url_for('cadastrar') }}" method="post">
             <h2>Informações do Tutor:</h2>
             <label for="">Nome do tutor:</label>
-            <input type="text" name="nome-tutor">
+            <input type="text" name="nome-tutor" value="{{ login and login[1] or '' }}">
 
             <label for="">Telefone:</label>
-            <input type="tel" name="telefone">
+            <input type="tel" name="telefone" value="{{ login and login[2] or '' }}">
 
             <h2>Informações do Animal:</h2>
             <label for="">Nome do Animal</label>
-            <input type="text" name="nome-animal">
+            <input type="text" name="nome-animal" value="{{ login and login[3] or '' }}">
 
             <label for="">Espécie:</label>
-            <input type="text" name="especie">
+            <input type="text" name="especie" value="{{ login and login[4] or '' }}">
 
             <label for="">Raça:</label>
-            <input type="text" name="raca">
+            <input type="text" name="raca" value="{{ login and login[5] or '' }}">
 
             <label for="">Peso:</label>
-            <input type="text" name="peso">
+            <input type="number" name="peso" value="{{ login and login[6] or '' }}">
 
             <button type="submit">Cadastrar-se</button>
         </form>

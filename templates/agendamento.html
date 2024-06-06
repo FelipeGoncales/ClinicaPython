@@ -7,20 +7,24 @@
 </head>
 <body>
     <h1>{{ agenda and 'Editar' or 'Novo' }} Agendamento</h1>
-    <form method="post">
+    <form action="{{ url_for('editar_consulta', codigo=agenda[0]) if agenda else url_for('agendar') }}" method="post">
         <label for="nome_do_animal">Nome do Animal:</label>
         <input type="text" id="nome_do_animal" name="nome_do_animal" value="{{ agenda and agenda[1] or '' }}"><br>
+        
         <label for="nome_do_tutor">Nome do Tutor:</label>
         <input type="text" id="nome_do_tutor" name="nome_do_tutor" value="{{ agenda and agenda[2] or '' }}"><br>
+        
         <label for="data">Data:</label>
         <input type="date" id="data" name="data" value="{{ agenda and agenda[3] or '' }}"><br>
+        
         <label for="hora">Hora:</label>
         <input type="time" id="hora" name="hora" value="{{ agenda and agenda[4] or '' }}"><br>
+        
         <label for="sintomas">Sintomas:</label>
         <input type="text" id="sintomas" name="sintomas" value="{{ agenda and agenda[5] or '' }}"><br>
-        <input type="submit" value="Salvar">
+        
+        <button type="submit">Salvar</button>
     </form>
-    <a href="/">Voltar</a>
-    
-</body> 
+    <a href="/pagina-inicial">Voltar</a>
+</body>
 </html>
