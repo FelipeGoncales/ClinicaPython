@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento</title>
+    <title>Agenda</title>
 </head>
 <body>
-    {% if num == 0 %}
-    <a href="cadastro"><button>Cadastrar-se</button></a>
-    <p>Perfil</p>
+    <h1>Agendamentos</h1>
     <ul>
-        {% for logins in login %}
-        <li>{{ logins[1] }}</li>
+        {% for agenda in agendas %}
+            <li>
+                {{ agenda[1] }} - {{ agenda[2] }} - {{ agenda[3] }} - {{ agenda[4] }} - {{ agenda[5] }}
+                <a href="/editar_agendamento/{{ agenda[0] }}">Editar</a>
+                <a href="/cancelar_agendamento/{{ agenda[0] }}">Cancelar</a>
+            </li>
         {% endfor %}
     </ul>
-    {% endif %}
+    <a href="/agendamento">Novo Agendamento</a>
 </body>
 </html>

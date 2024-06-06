@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Veterinária</title>
+</head>
+<body>
+    <h1>Calculadora Veterinária</h1>
+
+    <h2>Calculadora de Fluidoterapia</h2>
+    <form method="post">
+        <label for="desidratacao">Grau de Desidratação:</label>
+        <select id="desidratacao" name="desidratacao" required>
+            <option value="leve">Leve</option>
+            <option value="moderada">Moderada</option>
+            <option value="grave">Grave</option>
+        </select>
+        <br><br>
+        <label for="peso_fluidoterapia">Peso do Animal (kg):</label>
+        <input type="number" id="peso_fluidoterapia" name="peso_fluidoterapia" step="0.01" required>
+        <br><br>
+        <input type="submit" value="Calcular Fluidoterapia">
+    </form>
+
+    {% if volume is not none %}
+        <h3>Volume de Fluidoterapia: {{ volume }} mL</h3>
+    {% endif %}
+
+    <h2>Calculadora de Dose de Medicamento</h2>
+    <form method="post">
+        <label for="peso_medicamento">Peso do animal (kg):</label>
+        <input type="text" id="peso_medicamento" name="peso_medicamento" required><br><br>
+        <label for="dose_recomendada">Dose recomendada (mg/kg):</label>
+        <input type="text" id="dose_recomendada" name="dose_recomendada" required><br><br>
+        <input type="submit" value="Calcular Dose de Medicamento">
+    </form>
+
+    {% if dose is not none %}
+        <h3>Dose a ser administrada: {{ dose }} mg</h3>
+    {% endif %}
+</body>
+</html>
