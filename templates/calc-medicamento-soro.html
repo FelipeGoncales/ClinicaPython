@@ -31,7 +31,7 @@
         </select>
         <br><br>
         <label for="peso_fluidoterapia">Peso do Animal (kg):</label>
-        <input type="number" id="peso_fluidoterapia" name="peso_fluidoterapia" step="0.01" required>
+        <input placeholder="  KG*" type="number" id="peso_fluidoterapia" name="peso_fluidoterapia" step="0.01" required>
         <br><br>
         </div>
         <div class="botao">
@@ -48,9 +48,9 @@
     <form action='/dose-medicamento' method="post">
         <div class="divajust">
         <label for="peso_medicamento">Peso do animal (kg):</label>
-        <input type="text" id="peso_medicamento" name="peso_medicamento" required><br><br>
+        <input placeholder="  KG*" type="text" id="peso_medicamento" name="peso_medicamento" required><br><br>
         <label for="dose_recomendada">Dose recomendada (mg/kg):</label>
-        <input type="text" id="dose_recomendada" name="dose_recomendada" required><br><br>
+        <input placeholder="  MG/KG*" type="text" id="dose_recomendada" name="dose_recomendada" required><br><br>
         </div>
         <div class="botao">
         <button type="submit">Calcular</button>
