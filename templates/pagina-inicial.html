@@ -15,16 +15,15 @@
             <a href="/calculo-idade">Calcular Idade do Seu Animal</a>
             <div class="sep"></div>
             <a href="/calc-soro-medicamento">Calcular Soro e Medicamento</a>
-            {% for info in login %}
-            <a href="/editar_login/{{ info[0] }}"><img src="../static/img/icon.png" alt="Icon perfil" class="icon"></a>
+            <a href="pagina-inicial"><img src="../static/img/icon.png" alt="Icon perfil" class="icon"></a>
         </nav>
     </header>
 
     <main>
         <div class="container">
-            <div class="div">
                 <div class="div-">
-                    <h2 class="title">Perfil</h2>
+                    <h2 class="title">Perfil</h2>   
+                {% for info in login %}
                     <div class="div-informações">
                         <p> <span> Usuário: </span>{{ info[1] }}</p>
                         <p> <span> Telefone: </span>{{ info[2] }}</p>
@@ -36,8 +35,6 @@
                     </div>
                     {% endfor %}
                 </div>
-            </div>
-            <div class="div">
                 <div class="div-">
                     <h2 class="title">Agendamentos</h2>
                     {% for agenda in agendas %}
@@ -53,9 +50,8 @@
                         </div>
                     </div>
                     {% endfor %}
-                </div>
             </div>
-            <a class="novo-agendamento" href="/agendamento">Novo Agendamento</a>
+            <a class="novo-agendamento" href="/agendamento">+ Novo Agendamento</a>
         </div>
     </main>
 

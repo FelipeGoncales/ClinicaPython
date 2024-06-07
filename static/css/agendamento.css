@@ -99,7 +99,7 @@ label{
 .input-data{
     padding-left: 10px;
     padding-right: 8px;
-    width: 8vw;
+    width: 9.5vw;
 }
 input{
     border-radius: 35px;
@@ -108,6 +108,7 @@ input{
     height: 5vh;
     border: none;
     padding-left: 8px;
+    font-size: 1.3vw;
 }
 ::placeholder {
     color: var(--preto);
@@ -140,7 +141,7 @@ input{
 .input-hora{
     padding-left: 10px;
     padding-right: 8px;
-    width: 5vw;
+    width: 7vw;
 }
 .div-hora {
     display: flex;

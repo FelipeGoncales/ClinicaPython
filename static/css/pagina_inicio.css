@@ -7,6 +7,13 @@
 :root{
     --azul: #4F46E5;
     --preto: #000000;
+    --branco: #ffffff;
+    --background: #F7F7F7;
+}
+
+main {
+    background-color: var(--background);
+    padding-bottom: 5vh;
 }
 
 /* inicio>> header */
@@ -92,12 +99,12 @@ h2{
     color: var(--preto);
     font-size: 2em;
     padding-bottom: 1.5vh;
-    padding-top: 1.5vh;
+    margin-top: 7vh;
 }
 span{
     color: var(--azul);
 }
-p{
+.div-informações p{
     background-color: white;
     margin-bottom: 9px;
     padding: 10px;
@@ -120,15 +127,33 @@ p{
 
 }
 .novo-agendamento{
+    margin-top: 1vh;
     display: flex;
+    align-items: center;
     background-color: white;
     color: var(--azul);
-    margin: 9px 0;
-    margin-left: 17vw;
     padding: 10px;
-    border-radius: 1vw;
+    border-radius: 3vw;
     font-weight: bold;
-    border: 2px solid var(--azul);
+    border: 0.4vw solid var(--azul);
+    font-size: 1.4vw;
+    height: 3vh;
+    transition: 0.3s;
+}
+
+.novo-agendamento:hover{
+    scale: 1.1;
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+.novo-agendamento span {
+    font-size: 3vw;
+    color: var(--azul);
+    transition: 0.3s;
+}
+.novo-agendamento span:hover {
+    color: var(--branco);
 }
 .div-informações{
     background-color: var(--azul);
@@ -176,5 +201,6 @@ footer h3 {
 footer p {
     font-size: 1.3vw;
     margin-bottom: 2vh;
+    font-weight: lighter;
 }
 /* end */
