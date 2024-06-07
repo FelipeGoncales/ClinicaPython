@@ -89,8 +89,8 @@ def cancelar_consulta(codigo):
     del agendas[codigo]
     return redirect('/pagina-inicial')
 
-@app.route('/calulando-idade', methods=['GET','POST'])
-def calculando_idade():
+@app.route('/calculando-idade', methods=['GET','POST'])
+def cal_idade():
     result = ''
     if request.method == 'POST':
         animal = request.form['animal'].lower()
