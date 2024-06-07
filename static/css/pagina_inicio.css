@@ -9,6 +9,7 @@
     --preto: #000000;
 }
 
+/* inicio>> header */
 header {
     display: flex;
     align-items: center;
@@ -78,7 +79,9 @@ nav a:hover{
     border-radius: 3vw;
     border-left: 0.2vw solid var(--preto);
 }
+/* end */
 
+/* inicio>> conteudo site */
 .container{
     display: flex;
     justify-content: center;
@@ -121,7 +124,7 @@ p{
     background-color: white;
     color: var(--azul);
     margin: 9px 0;
-    margin-left: 145px;
+    margin-left: 17vw;
     padding: 10px;
     border-radius: 1vw;
     font-weight: bold;
@@ -138,3 +141,40 @@ p{
     align-content: flex-start;
     align-items: flex-start;
 }
+/* end */
+
+/* inicio>> footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.container-footer {
+    display: flex;
+    gap: 5vw;
+}
+footer .container-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    margin: 5vh 0;
+    gap: 0.5vh 0;
+}
+footer li {
+    font-size: 1.5vw;
+    margin: 3vh 0;
+}
+footer h3 {
+    width: 100%;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+}
+footer p {
+    font-size: 1.3vw;
+    margin-bottom: 2vh;
+}
+/* end */
