@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Cálculo Dose e </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Veterinária</title>
+    <link rel="stylesheet" href="../static/css/calculos.css">
 </head>
 <body>
-    <h1>Calculadora Veterinária</h1>
-
-    <h2>Calculadora de Fluidoterapia</h2>
-    <form action='/fluidoterapia' method="post">
+    <main>
+    <h2 class="titulo">Calculadora de Fluidoterapia</h2>
+    <div></div>
+    <form class="form1" action='/fluidoterapia' method="post">
         <label for="desidratacao">Grau de Desidratação:</label>
         <select id="desidratacao" name="desidratacao" required>
             <option value="leve">Leve</option>
@@ -20,6 +23,7 @@
         <br><br>
         <button type="submit">Calcular Fluidoterapia</button>
     </form>
+    </div>
 
     {% if volume is not none %}
         <h3>Volume de Fluidoterapia: {{ volume }} mL</h3>
@@ -39,5 +43,6 @@
     {% endif %}
 
     <a href="/pagina-inicial">Voltar</a>
+    </main>
 </body>
 </html>
