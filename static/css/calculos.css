@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h2 {
+    margin: 20px;
+    font-size: 40px;
+    color: #000000;
+}
+h3 {
+    margin: 20px;
+}
+
+:root{
+    --azul: #4F46E5;
+    --preto: #000000;
+}
+
+
+form {
+    background-color:var(--azul);
+    width: 600px;
+    height: 250px;
+    border-radius: 50px;
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+}
+
+.divajust {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: none;
+    position: relative;
+    right: 20px;
+}
+
+button {
+    width: 250px;
+    border-radius: 15px;
+    border: none;
+    height: 45px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+select {
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border: none;
+    width: 165px;
+    display: flex;
+}
+
+label {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border: none;
+}
+
+.voltar {
+    color: #000000;
+    text-decoration: none;
+    font-size:27px;
+    font-weight: bold;
+    display: block;
+    width: 45vw;
+    text-align: right;
+}
