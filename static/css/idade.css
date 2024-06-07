@@ -4,7 +4,317 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-:root{
+
+:root {
     --azul: #4F46E5;
     --preto: #000000;
+    --branco: white;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+section {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+    border-radius: 10vh;
+    height: 50vh;
+    width: 80vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 3);
+    margin-bottom: 2%;
+}
+
+form {
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--branco);
+}
+
+input {
+    width: 40vh;
+    flex: content;
+    margin: 5%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 35vh;
+}
+
+.center-div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.butão {
+    border: 0.5vw solid var(--azul);
+    border-radius: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--azul);
+    background: none;
+    background-color: var(--branco);
+    padding: 1.5vh 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.butão:hover {
+    scale: 1.1;
+}
+
+.center-div form .butão {
+    color: var(--azul);
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+.center-div .resultado {
+    color: var(--branco);
+}
+
+.voltar {
+    color: var(--preto);
+    display: block;
+    margin: 0 auto;
+    text-align: right;
+    width: 35%;
+    margin-bottom: 10vh;
+}
+
+.voltar:hover {
+    color: var(--azul);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+}
+
+.logo {
+    width: 12vw;
+    height: 12vw;
+}
+
+header .logo {
+    margin: 0 1vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 60vw;
+    justify-content: space-around;
+}
+
+nav a {
+    font-size: 1.7vw;
+    color: var(--preto);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.butão-2 {
+    border: 0.5vw solid var(--azul);
+    border-radius: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--azul);
+    background: none;
+    padding: 1.5vh 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.butão-2:hover {
+    background: var(--azul);
+    color: var(--branco);
+    scale: 1.1;
+}
+
+nav a:hover {
+    color: var(--azul);
+}
+
+.sep {
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container {
+    display: flex;
+    gap: 5vw;
+}
+
+footer .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    margin: 5vh 0;
+    gap: 0.5vh 0;
+}
+
+footer li {
+    font-size: 1.5vw;
+    margin: 3vh 0;
+}
+
+footer h3 {
+    width: 100%;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+}
+
+footer p {
+    font-size: 1.3vw;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 1200px) {
+    .center-div {
+        height: auto;
+        width: 80%;
+        padding: 3%;
+    }
+
+    .butão, .butão-2 {
+        width: 60%;
+    }
+
+    input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 15vw;
+    }
+
+    nav a {
+        font-size: 1.8vw;
+    }
+
+    .butão, .butão-2 {
+        font-size: 2vw;
+        width: 70%;
+    }
+
+    footer li {
+        font-size: 2.5vw;
+    }
+
+    footer h3 {
+        font-size: 3.5vw;
+    }
+
+    footer p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 3vw;
+        margin: 1vh 0;
+    }
+
+    .center-div {
+        height: auto;
+        width: 90%;
+        padding: 5%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .butão, .butão-2 {
+        width: 80%;
+        font-size: 2.5vw;
+    }
+
+    footer .container {
+        gap: 5vh;
+    }
+
+    footer li {
+        font-size: 2.5vw;
+    }
+
+    footer h3 {
+        font-size: 3.5vw;
+    }
+
+    footer p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 20vw;
+    }
+
+    nav a {
+        font-size: 4vw;
+    }
+
+    .butão, .butão-2 {
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    footer li {
+        font-size: 3vw;
+    }
+
+    footer h3 {
+        font-size: 4.5vw;
+    }
+
+    footer p {
+        font-size: 3vw;
+    }
 }

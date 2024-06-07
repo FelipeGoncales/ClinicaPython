@@ -7,4 +7,148 @@
 :root{
     --azul: #4F46E5;
     --preto: #000000;
+    --branco: #FFFFFF;
+    --background: #F7F7F7;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 3vh 0;
+}
+
+.logo {
+    width: 12vw;
+    height: 12vw;
+    cursor: pointer;
+}
+header .logo{
+    margin: 0 1vw;
+}
+button {
+    border: 0.5vw solid var(--azul);
+    border-radius: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--azul);
+    background: none;
+    padding: 1.5vh 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+    scale: 1.2;
+}
+button:hover {
+    background: var(--azul);
+    color: var(--branco);
+    scale: 1.3;
+}
+
+.icon {
+    height: 7vw;
+    width: 7vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2vw;
+    letter-spacing: 0.05vw;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 70vw;
+}
+
+section {
+    display: flex;
+    gap: 5vh;
+    flex-direction: column ;
+    align-items: center;
+}
+.container-main {
+    display: flex;
+    flex-direction: column;
+}
+.grande {
+    display: flex;
+    gap: 0 5vw;
+}
+label{
+    font-size: 1.4vw;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    color: var(--preto);
+}
+input{
+    color: var(--branco);
+    border-radius: 2vw;
+    width: 25vw;
+    height: 5vh;
+    padding: 0.5vh 0;
+    padding-left: 0.5vw;
+    border: none;
+    padding-left: 1.5vw;
+    background-color: var(--azul);
+}
+
+::placeholder {
+    font-size: 1.3vw;
+    color: var(--branco);
+}
+
+main {
+    background-color: var(--background);
+    padding: 8vh 0;
+}
+
+main button {
+    margin-top: 5vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+footer .container {
+    display: flex;
+    gap: 5vw;
+}
+footer .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    margin: 5vh 0;
+    gap: 0.5vh 0;
+}
+footer li {
+    font-size: 1.5vw;
+    margin: 3vh 0;
+}
+footer h3 {
+    width: 100%;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+}
+footer p {
+    font-size: 1.3vw;
+    margin-bottom: 2vh;
 }

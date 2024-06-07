@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="../static/css/calculos.css">
 </head>
 <body>
-    <main>
-    <h2 class="titulo">Calculadora de Fluidoterapia</h2>
+    <header>
+        <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">
+        <nav>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <div class="sep"></div>
+            <a href="#equipe">Equipe</a>
+            <div class="sep"></div>
+            <a href="#contato">Contato</a>
+            <a href="cadastro"><button>Cadastrar</button></a>
+        </nav>
+    </header>
+    <main>   
+    <h2 class="titulo">Calculadora <p>Fluidoterapia</p></h2>
+
     <form class="form1" action='/fluidoterapia' method="post">
+        <div class="divajust">
         <label for="desidratacao">Grau de Desidratação:</label>
         <select id="desidratacao" name="desidratacao" required>
-            <option value="leve">Leve</option>
+            <option  value="leve">Leve</option>
             <option value="moderada">Moderada</option>
             <option value="grave">Grave</option>
         </select>
@@ -20,27 +33,57 @@
         <label for="peso_fluidoterapia">Peso do Animal (kg):</label>
         <input type="number" id="peso_fluidoterapia" name="peso_fluidoterapia" step="0.01" required>
         <br><br>
-        <button type="submit">Calcular Fluidoterapia</button>
+        </div>
+        <div class="botao">
+        <button type="submit">Calcular</button>
+        </div>
     </form>
 
     {% if volume is not none %}
         <h3>Volume de Fluidoterapia: {{ volume }} mL</h3>
     {% endif %}
 
-    <h2>Calculadora de Dose de Medicamento</h2>
+    <h2>Calculadora de Dose <p>de Medicamento</p></h2>
+
     <form action='/dose-medicamento' method="post">
+        <div class="divajust">
         <label for="peso_medicamento">Peso do animal (kg):</label>
         <input type="text" id="peso_medicamento" name="peso_medicamento" required><br><br>
         <label for="dose_recomendada">Dose recomendada (mg/kg):</label>
         <input type="text" id="dose_recomendada" name="dose_recomendada" required><br><br>
-        <button type="submit">Calcular Dose de Medicamento</button>
+        </div>
+        <div class="botao">
+        <button type="submit">Calcular</button>
+        </div>
     </form>
 
     {% if dose is not none %}
         <h3>Dose a ser administrada: {{ dose }} mg</h3>
     {% endif %}
-
-    <a href="/pagina-inicial">Voltar</a>
+    <div class="voltarajust">
+    <a class="voltar" href="/pagina-inicial">VOLTAR</a>
+    </div>
     </main>
+    <footer id="contato">
+        <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">
+        <div class="container">
+            <div>
+                <h3>Atendimento</h3>
+                <ul>
+                    <li>clinicadogdodoi@gmail.com</li>
+                    <li>(18) 91234-5678</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li>ClinicaDogDodoi</li>
+                </ul>
+            </div>
+        </div>
+        <p class="texto-footer">DogDodói® - Todos os direitos reservados | Avenida dos Peludos - N° 123 
+            -  Cidade das Cores / Planalto da Alegria - CNPJ: 12.345.678/0001-90
+        </p>
+    </footer>
 </body>
 </html>
