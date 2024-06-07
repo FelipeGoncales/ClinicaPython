@@ -8,3 +8,86 @@
     --azul: #4F46E5;
     --preto: #000000;
 }
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 2em;
+}
+.div-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    border-radius: 35px;
+    width: 30vw;
+    height: 50vh;
+    padding: 20px 10px;
+}
+form{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+label{
+    color: white;
+}
+.input-data{
+    padding-left: 10px;
+    padding-right: 8px;
+    width: 8vw;
+}
+input{
+    border-radius: 35px;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    padding-left: 8px;
+}
+.div-lado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.bnt-agendar{
+    height: 8vh;
+    width: 12vw;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: white;
+    border: none;
+}
+.div-bnt-agendar{
+    display: flex;
+}
+.input-hora{
+    padding-left: 10px;
+    padding-right: 8px;
+    width: 5vw;
+}
+.div-hora {
+    display: flex;
+    flex-direction: column;
+}
+.link-voltar{
+    font-size: 1.2em;
+    color: var(--preto);
+    display: block;
+    text-align: right;
+    width: 25vw;
+}
