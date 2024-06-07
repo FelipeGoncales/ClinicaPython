@@ -24,7 +24,7 @@ def pagina_inicial():
 
 @app.route('/calculo-idade')
 def calculo_idade():
-    return render_template('calc_idade.html')
+    return render_template('calc_idade.html', login=login)
 
 @app.route('/calc-soro-medicamento')
 def calc_soro_medicamento():
@@ -97,36 +97,36 @@ def cal_idade():
         idade = int(request.form['idade'])
         if animal == 'cachorro':
             if idade == 1:
-                result = 'Seu Cachorro tem 15 anos humanos.'
+                result = 'Seu Cachorro tem 15 anos humanos'
             elif idade == 2:
-                result = 'Seu Cachorro tem 24 anos humanos.'
+                result = 'Seu Cachorro tem 24 anos humanos'
             elif idade == 3:
-                result = 'Seu Cachorro tem 28 anos humanos.'
+                result = 'Seu Cachorro tem 28 anos humanos'
             elif idade == 4:
-                result = 'Seu Cachorro tem 32 anos humanos.'
+                result = 'Seu Cachorro tem 32 anos humanos'
             elif idade == 5:
-                result = 'Seu Cachorro tem 36 anos humanos.'
+                result = 'Seu Cachorro tem 36 anos humanos'
             elif idade == 6:
-                result = 'Seu Cachorro tem 40 anos humanos.'
+                result = 'Seu Cachorro tem 40 anos humanos'
             elif idade == 7:
-                result = 'Seu Cachorro tem 44 anos humanos.'
+                result = 'Seu Cachorro tem 44 anos humanos'
             elif idade >= 8:
                 idade_cachorro = 44 + (5 * (idade - 8))
-                result = f'Seu Cachorro tem {idade_cachorro} anos humanos.'
+                result = f'Seu Cachorro tem {idade_cachorro} anos humanos'
         elif animal == 'gato':
             if idade == 1:
-                result = 'Seu Gato tem 15 anos humanos.'
+                result = 'Seu Gato tem 15 anos humanos'
             elif idade == 2:
-                result = 'Seu Gato tem 24 anos humanos.'
+                result = 'Seu Gato tem 24 anos humanos'
             elif idade == 3:
-                result = 'Seu Gato tem 28 anos humanos.'
+                result = 'Seu Gato tem 28 anos humanos'
             elif idade == 4:
-                result = 'Seu Gato tem 32 anos humanos.'
+                result = 'Seu Gato tem 32 anos humanos'
             elif idade == 5:
-                result = 'Seu Gato tem 36 anos humanos.'
+                result = 'Seu Gato tem 36 anos humanos'
             elif idade >= 6:
                 idade_gato = 36 + (4 * (idade - 6))
-                result = (f'Seu Gato tem {idade_gato} anos humanos.')
+                result = (f'Seu Gato tem {idade_gato} anos humanos')
         else:
             result = 'Animal Inválido'
     return render_template('calc_idade.html', result=result)

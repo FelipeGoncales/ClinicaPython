@@ -12,35 +12,37 @@
   <header>
     <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">
     <nav>
-      <a href="#sobre-nos">Página Inicial</a>
+      <a href="pagina-inicial">Página Inicial</a>
       <div class="sep"></div>
-      <a href="#equipe">Miligramas por Medicamento</a>
+      <a href="calc-soro-medicamento">Miligramas por Medicamento</a>
       <div class="sep"></div>
-      <a href="#contato">Fluidotarapia</a>
-      <a href="cadastro"><button class="butão-2">Cadastrar</button></a>
+      <a href="calc-soro-medicamento">Fluidotarapia</a>
+      <a href="pagina-inicial"><img src="../static/img/icon.png" alt="" class="icon"></a>
     </nav>
   </header>
 
-  <section>
-    <h3 class="titulo">Quantos anos seu Pet tem?</h3>
-    <div class="center-div">
-      <form action='/calculando-idade' method='post'>
-        <label for="animal">Informe o Pet (Gato/Cachorro):</label>
-        <input placeholder=" Informe a Espécie" type="text" id="animal" name="animal" required>
-
-        <label for="idade">Informe a idade do Pet:</label>
-        <input placeholder=" Informe a Idade" type="number" id="idade" name="idade" required>
-
-        <button class="butão" type="submit">Calcular</button>
-      </form>
-
-
-      {% if result %}
-      <h3 class="resultado">{{ result }}</h3>
-      {% endif %}
-    </div>
-  </section>
-  <a class="voltar" href="/pagina-inicial">VOLTAR</a>
+  <main>
+    <section>
+      <h3 class="titulo">Quantos anos seu Pet tem?</h3>
+      <div class="center-div">
+        <form action='/calculando-idade' method='post'>
+          <label for="animal">Informe o Pet (Gato/Cachorro):</label>
+          <input placeholder=" Informe a Espécie" type="text" id="animal" name="animal" required>
+  
+          <label for="idade">Informe a idade do Pet:</label>
+          <input placeholder=" Informe a Idade" type="number" id="idade" name="idade" required>
+  
+          <button class="butão" type="submit">Calcular</button>
+        </form>
+  
+  
+        {% if result %}
+        <h3 class="resultado">{{ result }}</h3>
+        {% endif %}
+      </div>
+    </section>
+    <a class="voltar" href="/pagina-inicial">VOLTAR</a>
+  </main>
 
   <footer id="contato">
     <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">

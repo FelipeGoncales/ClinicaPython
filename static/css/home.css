@@ -45,6 +45,16 @@ nav a{
     transition: 0.2s;
     cursor: pointer;
 }
+nav a:hover{
+    color: var(--azul);
+}
+
+.sep{
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
+}
 button {
     border: 0.5vw solid var(--azul);
     border-radius: 10vw;
@@ -60,16 +70,6 @@ button:hover {
     background: var(--azul);
     color: var(--branco);
     scale: 1.1;
-}
-nav a:hover{
-    color: var(--azul);
-}
-
-.sep{
-    height: 5vh;
-    border: none;
-    border-radius: 3vw;
-    border-left: 0.2vw solid var(--preto);
 }
 
 .banner {
