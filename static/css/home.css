@@ -8,4 +8,175 @@
 :root{
     --azul: #4F46E5;
     --preto: #000000;
+    --branco: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+}
+
+.logo {
+    width: 12vw;
+    height: 12vw;
+}
+header .logo{
+    margin: 0 1vw;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 60vw;
+    justify-content: space-around;
+}
+nav a{
+    font-size: 1.7vw;
+    color: var(--preto);
+    transition: 0.2s;
+    cursor: pointer;
+}
+button {
+    border: 0.5vw solid var(--azul);
+    border-radius: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--azul);
+    background: none;
+    padding: 1.5vh 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--azul);
+    color: var(--branco);
+    scale: 1.1;
+}
+nav a:hover{
+    color: var(--azul);
+}
+
+.banner {
+    position: relative;
+}
+.banner img {
+    width: 90vw;
+}
+.banner button {
+    position: absolute;
+    left: 5vw;
+    bottom: 6vw;
+}
+
+.sep{
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
+}
+
+.sobre-nos {
+    text-align: center;
+    margin: 5vh 0;
+}
+.sobre-nos img {
+    width: 15vw;
+    margin: 5vh 0;
+}
+.sobre-nos p {
+    text-align: center;
+    font-size: 1.7vw;
+    letter-spacing: 0.1vw;
+    margin: 0 21vw;
+    line-height: 6vh;
+}
+
+.sobre-nos h4 {
+    margin: 5vh 0;
+    font-size: 2vw;
+    letter-spacing: 0.3vw;
+}
+
+h2 {
+    font-size: 4vw;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+.equipe {
+    margin: 10vh 0;
+}
+.equipe-itens {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 0;
+}
+.profissional {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25vw;
+    background-color: var(--azul);
+    padding: 2vw 1vw;
+    border-radius: 1.5vw;
+    box-shadow: -0.5vw 0.8vw 2vw rgba(0,0,0,0.5);
+    transition: 0.4s ease;
+}
+.profissional:hover {
+    scale: 1.08;
+}
+.profissional h4 {
+    margin: 2vh 0;
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
+    color: var(--branco);
+}
+.profissional p {
+    background-color: var(--branco);
+    font-size: 1.4vw;
+    margin: 0 1.5vw;
+    border-radius: 2vw;
+    padding: 1vw; 
+    text-align: center; 
+    font-weight: lighter;  
+    line-height: 4.5vh;
+}
+.profissional img {
+    border-radius: 50%;
+    width: 18vw;
+    height: 18vw;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .container {
+    display: flex;
+    gap: 5vw;
+}
+footer .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    margin: 5vh 0;
+    gap: 0.5vh 0;
+}
+footer li {
+    font-size: 1.5vw;
+    margin: 3vh 0;
+}
+footer h3 {
+    width: 100%;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+}
+footer p {
+    font-size: 1.3vw;
+    margin-bottom: 2vh;
 }
