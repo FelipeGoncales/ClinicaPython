@@ -11,23 +11,23 @@
         <form action="{{ url_for('editar_login', codigo=login[0]) if login else url_for('cadastrar') }}" method="post">
             <h2>Informações do Tutor:</h2>
             <label for="">Nome do tutor:</label>
-            <input type="text" name="nome-tutor" value="{{ login and login[1] or '' }}">
+            <input type="text" name="nome-tutor" value="{{ login and login[1] or '' }}" required>
 
             <label for="">Telefone:</label>
-            <input type="tel" name="telefone" value="{{ login and login[2] or '' }}">
+            <input type="tel" name="telefone" value="{{ login and login[2] or '' }}" required>
 
             <h2>Informações do Animal:</h2>
             <label for="">Nome do Animal</label>
-            <input type="text" name="nome-animal" value="{{ login and login[3] or '' }}">
+            <input type="text" name="nome-animal" value="{{ login and login[3] or '' }}" required>
 
             <label for="">Espécie:</label>
-            <input type="text" name="especie" value="{{ login and login[4] or '' }}">
+            <input type="text" name="especie" value="{{ login and login[4] or '' }}" required>
 
             <label for="">Raça:</label>
-            <input type="text" name="raca" value="{{ login and login[5] or '' }}">
+            <input type="text" name="raca" value="{{ login and login[5] or '' }}" required>
 
             <label for="">Peso:</label>
-            <input type="number" name="peso" value="{{ login and login[6] or '' }}">
+            <input type="number" name="peso" value="{{ login and login[6] or '' }}" required>
 
             <button type="submit">Cadastrar-se</button>
         </form>
