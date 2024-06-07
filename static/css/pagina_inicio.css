@@ -8,3 +8,133 @@
     --azul: #4F46E5;
     --preto: #000000;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+}
+
+.logo {
+    width: 12vw;
+    height: 12vw;
+}
+.icon{
+    width: 6vw;
+    height: 6vw;
+}
+header .logo{
+    margin: 0 1vw;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 60vw;
+    justify-content: space-around;
+}
+nav a{
+    font-size: 1.7vw;
+    color: var(--preto);
+    transition: 0.2s;
+    cursor: pointer;
+}
+button {
+    border: 0.5vw solid var(--azul);
+    border-radius: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--azul);
+    background: none;
+    padding: 1.5vh 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--azul);
+    color: var(--branco);
+    scale: 1.1;
+}
+nav a:hover{
+    color: var(--azul);
+}
+
+.banner {
+    position: relative;
+}
+.banner img {
+    width: 90vw;
+}
+.banner button {
+    position: absolute;
+    left: 5vw;
+    bottom: 6vw;
+}
+
+.sep{
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    color: var(--preto);
+    font-size: 2em;
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
+}
+span{
+    color: var(--azul);
+}
+p{
+    background-color: white;
+    margin-bottom: 9px;
+    padding: 10px;
+    border-radius: 2vw;
+    font-weight: bold;
+}
+.bnt-a{
+    background-color: var(--azul);
+    color: white;
+    margin-bottom: 9px;
+    padding: 10px;
+    border-radius: 1vw;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.div-sep{
+    display: flex;
+    gap: 1vw;
+    padding-top: 0.8vh;
+
+}
+.novo-agendamento{
+    display: flex;
+    background-color: white;
+    color: var(--azul);
+    margin: 9px 0;
+    margin-left: 145px;
+    padding: 10px;
+    border-radius: 1vw;
+    font-weight: bold;
+    border: 2px solid var(--azul);
+}
+.div-informações{
+    background-color: var(--azul);
+    width: 25vw;
+    min-height: 23vh;
+    border-radius: 1vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+}

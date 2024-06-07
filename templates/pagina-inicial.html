@@ -4,35 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="../static/css/pagina_inicio.css">
 </head>
 <body>
-    <h2>Perfil</h2>
-    {% for info in login %}
-    <div>
-        <p>Usuário: {{ info[1] }}</p>
-        <p>Telefone: {{ info[2] }}</p>
-        <p>Código: {{ info[0] }}</p>
-        <p>Nome do Animal: {{ info[3] }}</p>
-        <p>Espécie: {{ info[4] }}</p>
-        <p>Raça: {{ info[5] }}</p>
-        <a href="/editar_login/{{ info[0] }}">Editar</a>
-    </div>
-    {% endfor %}
-    <h2>Agendamentos</h2>
-        {% for agenda in agendas %}
-        <div>
-            <p>Tutor: {{ agenda[1] }}</p>
-            <p>Animal: {{ agenda[2] }}</p>
-            <p>Data: {{ agenda[3] }}</p>
-            <p>Horário: {{ agenda[4] }}</p>
-            <p>Sintomas: {{ agenda[5] }}</p>
-            <a href="/editar_agendamento/{{ agenda[0] }}">Editar</a>
-            <a href="/cancelar_agendamento/{{ agenda[0] }}">Excluir</a>
+    <header>
+        <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">
+        <nav>
+            <a href="/calculo-idade">Calcular Idade do Seu Animal</a>
+            <div class="sep"></div>
+            <a href="/calc-soro-medicamento">Calcular Soro e Medicamento</a>
+            {% for info in login %}
+            <a href="/editar_login/{{ info[0] }}"><img src="../static/img/icon.png" alt="Icon perfil" class="icon"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="div">
+                <div class="div-">
+                    <h2 class="title">Perfil</h2>
+                    <div class="div-informações">
+                        <p> <span> Usuário: </span>{{ info[1] }}</p>
+                        <p> <span> Telefone: </span>{{ info[2] }}</p>
+                        <p> <span> Código: </span>{{ info[0] }}</p>
+                        <p> <span> Nome do Animal: </span>{{ info[3] }}</p>
+                        <p> <span> Espécie: </span>{{ info[4] }}</p>
+                        <p> <span> Raça: </span>{{ info[5] }}</p>
+                        <a class="bnt-a" href="/editar_login/{{ info[0] }}">Editar</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="div">
+                <div class="div-">
+                    <h2 class="title">Agendamentos</h2>
+                    {% for agenda in agendas %}
+                    <div class="div-informações">
+                        <p> <span> Tutor: </span>{{ agenda[1] }}</p>
+                        <p> <span> Animal: </span>{{ agenda[2] }}</p>
+                        <p> <span> Data: </span>{{ agenda[3] }}</p>
+                        <p> <span> Horário: </span>{{ agenda[4] }}</p>
+                        <p> <span> Sintomas: </span>{{ agenda[5] }}</p>
+                        <div class="div-sep">
+                            <a class="bnt-a" href="/editar_agendamento/{{ agenda[0] }}">Editar</a>
+                            <a class="bnt-a" href="/cancelar_agendamento/{{ agenda[0] }}">Cancelar consulta</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <a class="novo-agendamento" href="/agendamento">Novo Agendamento</a>
         </div>
-        {% endfor %}
-    <a href="/agendamento">Novo Agendamento</a>
-
-    <a href="/calculo-idade"><button>Calcular Idade do Seu Animal</button></a>
-    <a href="/calc-soro-medicamento"><button>Calcular Quantidade de Soto e Medicamento</button></a>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
