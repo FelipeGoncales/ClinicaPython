@@ -9,7 +9,6 @@
 <body>
     <main>
     <h2 class="titulo">Calculadora de Fluidoterapia</h2>
-    <div></div>
     <form class="form1" action='/fluidoterapia' method="post">
         <label for="desidratacao">Grau de Desidratação:</label>
         <select id="desidratacao" name="desidratacao" required>
@@ -23,7 +22,6 @@
         <br><br>
         <button type="submit">Calcular Fluidoterapia</button>
     </form>
-    </div>
 
     {% if volume is not none %}
         <h3>Volume de Fluidoterapia: {{ volume }} mL</h3>

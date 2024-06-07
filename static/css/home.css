@@ -4,3 +4,8 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root{
+    --azul: #4F46E5;
+    --preto: #000000;
+}
