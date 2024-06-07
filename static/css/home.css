@@ -58,6 +58,13 @@ nav a:hover{
     color: var(--azul);
 }
 
+.sep{
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
+}
+
 .banner {
     position: relative;
 }
@@ -68,13 +75,6 @@ nav a:hover{
     position: absolute;
     left: 5vw;
     bottom: 6vw;
-}
-
-.sep{
-    height: 5vh;
-    border: none;
-    border-radius: 3vw;
-    border-left: 0.2vw solid var(--preto);
 }
 
 .sobre-nos {
@@ -148,6 +148,7 @@ h2 {
     width: 18vw;
     height: 18vw;
 }
+
 footer {
     display: flex;
     flex-direction: column;

@@ -14,6 +14,61 @@ main{
     justify-content: center;
     height: 100vh;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+}
+
+.logo {
+    width: 12vw;
+    height: 12vw;
+}
+header .logo{
+    margin: 0 1vw;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 60vw;
+    justify-content: space-around;
+}
+nav a{
+    font-size: 1.7vw;
+    color: var(--preto);
+    transition: 0.2s;
+    cursor: pointer;
+}
+button {
+    border: 0.5vw solid var(--azul);
+    border-radius: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--azul);
+    background: none;
+    padding: 1.5vh 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--azul);
+    color: var(--branco);
+    scale: 1.1;
+}
+nav a:hover{
+    color: var(--azul);
+}
+
+.sep{
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -31,19 +86,19 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--azul);
-    border-radius: 35px;
+    border-radius: 2vw;
     width: 30vw;
-    height: 50vh;
-    padding: 20px 10px;
+    padding: 2vh 0;
 }
 form{
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    gap: 8px;
+    gap: 1vh;
 }
 label{
+    margin: 1vh 0;
     color: white;
 }
 .input-data{
@@ -90,4 +145,37 @@ input{
     display: block;
     text-align: right;
     width: 25vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-footer {
+    display: flex;
+    gap: 5vw;
+}
+footer .container-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    margin: 5vh 0;
+    gap: 0.5vh 0;
+}
+footer li {
+    font-size: 1.5vw;
+    margin: 3vh 0;
+}
+footer h3 {
+    width: 100%;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+}
+footer p {
+    font-size: 1.3vw;
+    margin-bottom: 2vh;
 }

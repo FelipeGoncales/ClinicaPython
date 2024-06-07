@@ -78,7 +78,7 @@ def editar_login(codigo):
         peso = request.form['peso']
         nome_tutor = request.form['nome-tutor']
         telefone = request.form['telefone']
-        login[codigo] = (nome_tutor, telefone, nome_animal, especie, raca, peso, codigo)
+        login[codigo] = (codigo, nome_tutor, telefone, nome_animal, especie, raca, peso)
         return redirect('/pagina-inicial')
     else:
         logins = login[codigo]
