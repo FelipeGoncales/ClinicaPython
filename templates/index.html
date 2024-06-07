@@ -3,12 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/">
+    <link rel="stylesheet" href="../static/css/home.css">
     <title>Bem-Vindo a Dog Dodói</title>
 </head>
 <body>
+    <header>
+        <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">
+        <nav>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <div class="sep"></div>
+            <a href="#equipe">Equipe</a>
+            <div class="sep"></div>
+            <a href="#contato">Contato</a>
+            <a href="cadastro"><button>Cadastrar</button></a>
+        </nav>
+    </header>
     <main>
-        <a href="cadastro"><button>Cadastrar</button></a>
+        <div class="banner">
+            <img src="../static/img/fundo.home.png" alt="Amor que cuida, Saúde que tranforma, Agende sua consulta">
+            <a href="cadastro"><button>Agendar Consulta</button></a>
+        </div>
+        <div class="sobre-nos" id="sobre-nos">
+            <img src="../static/img/pata.png" alt="">
+            <p>
+                “Somos uma equipe apaixonada e comprometida em oferecer cuidados excepcionais
+                 para seus animais de estimação. Contamos com os mais diversos serviços, 
+                 incluindo consultas personalizadas, vacinação, cirurgias e diagnósticos avançados. 
+                 Nossa missão é fornecer cuidados qualificados, orientação especializada e um 
+                 ambiente acolhedor para você e seus amigos peludos.”
+            </p>
+            <h4>Equipe Dog Dodói</h4>
+        </div>
+        <div class="equipe" id="equipe">
+            <h2>Nossa Equipe</h2>
+            <div class="equipe-itens">
+                <div class="profissional">
+                    <img src="../static/img/homem1.jpg" alt="">
+                    <h4>Ezequiel</h4>
+                    <p>Veterinário especializado em pequenos animais, com mais de 10 anos de 
+                        experiência e foco em atendimento humanizado e cirurgias.</p>
+                </div>
+                <div class="profissional">
+                    <img src="../static/img/mulher.equipe.jpg" alt="">
+                    <h4>Fabricia</h4>
+                    <p>Veterinária dermatologista, experiente no tratamento de 
+                        condições de pele e alergias em cães e gatos, conhecida 
+                        por sua abordagem empática.</p>
+                </div>
+                <div class="profissional">
+                    <img src="../static/img/homem1.jpg" alt="">
+                    <h4>Kleber</h4>
+                    <p>Veterinário especializado em grandes animais, 
+                        atuando em fazendas e propriedades rurais, 
+                        com foco em saúde e produtividade de rebanhos.</p>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer id="contato">
+        <img src="../static/img/logoDog.png" alt="Logo Dog Dodói" class="logo">
+        <div class="container">
+            <div>
+                <h3>Atendimento</h3>
+                <ul>
+                    <li>clinicadogdodoi@gmail.com</li>
+                    <li>(18) 91234-5678</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li>ClinicaDogDodoi</li>
+                </ul>
+            </div>
+        </div>
+        <p class="texto-footer">DogDodói® - Todos os direitos reservados | Avenida dos Peludos - N° 123 
+            -  Cidade das Cores / Planalto da Alegria - CNPJ: 12.345.678/0001-90
+        </p>
+    </footer>
 </body>
 </html>
