@@ -8,7 +8,7 @@
 main {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     color: #333;
     padding: 20px;
     display: flex;
@@ -52,8 +52,12 @@ nav {
     display: flex;
     align-items: center;
     height: 20vh;
-    width: 60vw;
+    width: 65vw;
     justify-content: space-around;
+}
+.icon{
+    width: 7vw;
+    height: 7vw;
 }
 
 nav a {
@@ -61,6 +65,17 @@ nav a {
     color: var(--preto);
     transition: 0.2s;
     cursor: pointer;
+}
+
+nav a:hover {
+    color: var(--azul);
+}
+
+.sep {
+    height: 5vh;
+    border: none;
+    border-radius: 3vw;
+    border-left: 0.2vw solid var(--preto);
 }
 
 form {
@@ -71,6 +86,7 @@ form {
     justify-content: space-around;
     align-content: center;
     display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 3);
 }
 
 .divajust {
@@ -92,12 +108,28 @@ form {
 
 button {
     width: 250px;
-    border-radius: 15px;
-    border: none;
     height: 45px;
+    border-radius: 15px;
+    border: 0.5vw solid var(--branco);
+    font-size: 2vw;
     font-weight: bold;
-    font-size: 25px;
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: 1.5vh 3vw;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+button:hover {
+    scale: 1.1;
+    color: var(--azul);
+    background-color: var(--branco);
+}
+
 
 select {
     padding: 0.5vw;
@@ -131,6 +163,7 @@ input {
 }
 
 footer {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,90 +199,4 @@ footer h3 {
 footer p {
     font-size: 1.3vw;
     margin-bottom: 2vh;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    header {
-        flex-direction: column;
-    }
-    nav {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    nav a {
-        font-size: 4vw;
-        margin: 10px 0;
-    }
-    .logo {
-        width: 20vw;
-        height: 20vw;
-    }
-    form {
-        width: 90%;
-        height: auto;
-        border-radius: 20px;
-    }
-    button {
-        width: 100%;
-        height: 50px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav a {
-        font-size: 6vw;
-    }
-    form {
-        width: 100%;
-    }
-    .logo {
-        width: 25vw;
-        height: 25vw;
-    }
-    footer .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    footer li, footer h3, footer p {
-        font-size: 4vw;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 24px;
-    }
-    h3 {
-        font-size: 20px;
-    }
-    nav {
-        font-size: 8vw;
-    }
-    .logo {
-        width: 30vw;
-        height: 30vw;
-    }
-    button {
-        width: 90%;
-        font-size: 20px;
-    }
-    form {
-        height: auto;
-        border-radius: 10px;
-        padding: 20px;
-    }
-    input, select {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
 }
