@@ -162,6 +162,10 @@ input {
     text-align: right;
 }
 
+.voltar:hover {
+    color: var(--azul);
+}
+
 footer {
     margin-top: 5vh;
     display: flex;
