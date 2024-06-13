@@ -52,12 +52,12 @@ nav {
     display: flex;
     align-items: center;
     height: 20vh;
-    width: 65vw;
+    width: 50vw;
     justify-content: space-around;
 }
 .icon{
-    width: 7vw;
-    height: 7vw;
+    width: 6vw;
+    height: 6vw;
 }
 
 nav a {
@@ -158,6 +158,7 @@ input {
     font-weight: bold;
     display: block;
     width: 45vw;
+    transition: 0.1s;
     text-align: right;
 }
 
