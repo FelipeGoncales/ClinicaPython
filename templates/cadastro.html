@@ -17,27 +17,35 @@
             <h1>Cadastre-se</h1>
             <form action="{{ url_for('editar_login', codigo=login[0]) if login else url_for('cadastrar') }}" method="post">
                 <div class="grande">
+                    <h2>Informações do Tutor:</h2>
                     <div class="container-main">
-                        <h2>Informações do Tutor:</h2>
-                        <label for="">Nome do tutor:</label>
-                        <input type="text" name="nome-tutor" value="{{ login and login[1] or '' }}" placeholder="Nome do Tutor*" required>
-            
-                        <label for="">Telefone:</label>
-                        <input type="tel" name="telefone" value="{{ login and login[2] or '' }}" placeholder="+55 (  )*" required>
+                        <div class="campos">
+                            <label for="">Nome do tutor:</label>
+                            <input type ="text" name="nome-tutor" value="{{ login and login[1] or '' }}" placeholder="Nome do Tutor*" required>
+                        </div>
+                        <div class="campos">
+                            <label for="">Telefone:</label>
+                            <input type="tel" name="telefone" value="{{ login and login[2] or '' }}" placeholder="+55 (  )*" required>
+                        </div>
                     </div>
-                   <div class="container-main">
-                        <h2>Informações do Animal:</h2>
-                        <label for="">Nome do Animal:</label>
-                        <input type="text" name="nome-animal" value="{{ login and login[3] or '' }}" placeholder="Nome do Animal*" required>
-    
-                        <label for="">Espécie:</label>
-                        <input type="text" name="especie" value="{{ login and login[4] or '' }}" placeholder="Espécie*" required>
-    
-                        <label for="">Raça:</label>
-                        <input type="text" name="raca" value="{{ login and login[5] or '' }}" placeholder="Raça*" required>
-    
-                        <label for="">Peso:</label>
-                        <input type="number" name="peso" value="{{ login and login[6] or '' }}" placeholder="Peso*" required>
+                    <h2>Informações do Animal:</h2>
+                    <div class="container-main">
+                        <div class="campos">
+                            <label for="">Nome do Animal:</label>
+                            <input type="text" name="nome-animal" value="{{ login and login[3] or '' }}" placeholder="Nome do Animal*" required>
+                        </div>
+                        <div class="campos">
+                            <label for="">Espécie:</label>
+                            <input type="text" name="especie" value="{{ login and login[4] or '' }}" placeholder="Espécie*" required>
+                        </div>
+                        <div class="campos">
+                            <label for="">Raça:</label>
+                            <input type="text" name="raca" value="{{ login and login[5] or '' }}" placeholder="Raça*" required>
+                        </div>
+                        <div class="campos">
+                            <label for="">Peso:</label>
+                            <input type="text" name="peso" value="{{ login and login[6] or '' }}" placeholder="Peso*" required>
+                        </div>
                    </div>
                 </div>
                 <button type="submit">Cadastrar-se</button>

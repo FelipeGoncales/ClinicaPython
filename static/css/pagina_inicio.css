@@ -97,28 +97,33 @@ nav a:hover{
 }
 h2{
     color: var(--preto);
-    font-size: 2em;
+    font-size: 3vw;
     padding-bottom: 1.5vh;
     margin-top: 7vh;
 }
+.title {
+    margin-top: 4vh;
+}
 span{
     color: var(--azul);
+    scale: 1.1;
+    font-weight: bold;
 }
 .div-informações p{
     background-color: white;
-    margin-bottom: 9px;
-    padding: 10px;
+    margin-bottom: 1.7vh;
+    padding: 2vh;
     border-radius: 2vw;
-    font-weight: bold;
+    font-size: 1.5vw;
 }
 .bnt-a{
     background-color: var(--azul);
     color: white;
-    margin-bottom: 9px;
-    padding: 10px;
-    border-radius: 1vw;
+    padding: 0.9vw 0.7vw;
+    font-size: 1.5vw;
+    border-radius: 1.5vw;
     font-weight: bold;
-    border: 2px solid white;
+    border: 0.3vw solid white;
 }
 .div-sep{
     display: flex;
@@ -127,7 +132,7 @@ span{
 
 }
 .novo-agendamento{
-    margin-top: 1vh;
+    margin-top: -2vh;
     display: flex;
     align-items: center;
     background-color: white;
@@ -136,7 +141,7 @@ span{
     border-radius: 3vw;
     font-weight: bold;
     border: 0.4vw solid var(--azul);
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     height: 3vh;
     transition: 0.3s;
 }
@@ -157,14 +162,11 @@ span{
 }
 .div-informações{
     background-color: var(--azul);
-    width: 25vw;
+    width: 30vw;
     min-height: 23vh;
-    border-radius: 1vw;
-    padding: 3vw;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: flex-start;
+    border-radius: 2vw;
+    padding: 2vw;
+    margin-bottom: 5vh;
 }
 /* end */
 

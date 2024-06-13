@@ -22,7 +22,7 @@
     <main>
         <div class="container">
                 <div class="div-">
-                    <h2 class="title">Perfil</h2>   
+                    <h2>Perfil</h2>   
                 {% for info in login %}
                     <div class="div-informações">
                         <p> <span> Usuário: </span>{{ info[1] }}</p>
@@ -31,10 +31,13 @@
                         <p> <span> Nome do Animal: </span>{{ info[3] }}</p>
                         <p> <span> Espécie: </span>{{ info[4] }}</p>
                         <p> <span> Raça: </span>{{ info[5] }}</p>
-                        <a class="bnt-a" href="/editar_login/{{ info[0] }}">Editar</a>
+                        <div class="div-sep">
+                            <a class="bnt-a" href="/editar_login/{{ info[0] }}">Editar</a>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
+                <a class="novo-agendamento" href="/cadastro">+ Novo Perfil</a>
                 <div class="div-">
                     <h2 class="title">Agendamentos</h2>
                     {% for agenda in agendas %}
@@ -50,7 +53,7 @@
                         </div>
                     </div>
                     {% endfor %}
-            </div>
+                </div>
             <a class="novo-agendamento" href="/agendamento">+ Novo Agendamento</a>
         </div>
     </main>
