@@ -90,11 +90,11 @@ form {
 }
 
 .divajust {
-    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding-left: 2vw;
 }
 
 .botao {
@@ -102,8 +102,7 @@ form {
     justify-content: center;
     align-items: center;
     bottom: none;
-    position: relative;
-    right: 20px;
+    padding-right: 2vw;
 }
 
 button {
