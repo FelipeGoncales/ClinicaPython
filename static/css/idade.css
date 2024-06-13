@@ -122,15 +122,15 @@ button:hover {
     margin-bottom: 2vh;
 }
 .voltar {
-    margin-top: 1vh;
-    font-size: 1.8vw;
-    color: var(--preto);
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
     margin-top: 2vh;
-    left: 57vw;
+    color: #000000;
+    text-decoration: none;
+    font-size: 27px;
     font-weight: bold;
+    display: block;
+    width: 45vw;
+    transition: 0.1s;
+    text-align: right;
 }
 
 .voltar:hover {
