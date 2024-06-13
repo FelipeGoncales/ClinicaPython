@@ -66,6 +66,9 @@ button {
     transition: 0.3s;
     cursor: pointer;
 }
+.banner {
+    text-align: center;
+}
 button:hover {
     background: var(--azul);
     color: var(--branco);
@@ -80,7 +83,7 @@ button:hover {
 }
 .banner button {
     position: absolute;
-    left: 5vw;
+    left: 9vw;
     bottom: 6vw;
 }
 

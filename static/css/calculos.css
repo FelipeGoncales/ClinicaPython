@@ -17,13 +17,15 @@ main {
 }
 
 h2 {
-    margin: 20px;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
     font-size: 40px;
     color: #000000;
 }
 
 h3 {
-    margin: 20px;
+    font-size: 1.8vw;
+    margin-top: 4vh;
 }
 
 :root {
@@ -79,13 +81,14 @@ nav a:hover {
 }
 
 form {
+    width: 25vw;
+    padding: 2vw;
     background-color: var(--azul);
-    width: 600px;
-    height: 250px;
-    border-radius: 50px;
-    justify-content: space-around;
-    align-content: center;
+    border-radius: 2vw;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 3);
 }
 
@@ -93,34 +96,21 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
-    padding-left: 2vw;
-}
-
-.botao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: none;
-    padding-right: 2vw;
+    flex-direction: column;
+    width: 200px;
 }
 
 button {
-    width: 250px;
-    height: 45px;
-    border-radius: 15px;
-    border: 0.5vw solid var(--branco);
+    width: 14vw;
+    border: 0.3vw solid var(--branco);
+    border-radius: 10vw;
     font-size: 2vw;
     font-weight: bold;
     color: var(--branco);
-    background-color: var(--azul);
-    padding: 1.5vh 3vw;
+    background: none;
+    padding: 1.5vh 2vw;
     transition: 0.3s;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 button:hover {
@@ -140,15 +130,37 @@ select {
 
 label {
     color: white;
-    font-size: 1em;
+    font-size: 2vw;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
+    width: 20vw;
 }
 
 input {
-    padding: 0.5vw;
+    padding: 0.6vw;
+    font-size: 1.5vw;
     border-radius: 2vw;
     border: none;
+    margin-bottom: 3vh;
+    width: 20vw;
+    padding-left: 1vw;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    padding: 0.6vw;
+    font-size: 1.5vw;
+    border-radius: 2vw;
+    border: none;
+    margin-bottom: 3vh;
+    width: 20vw;
+    padding-left: 1vw;
 }
 
 .voltar {
@@ -157,9 +169,10 @@ input {
     font-size: 27px;
     font-weight: bold;
     display: block;
-    width: 45vw;
-    transition: 0.1s;
-    text-align: right;
+    transition: 0.2s;
+    margin-top: 4vh;
+    width: 28vw;
+    text-align: left;
 }
 
 .voltar:hover {
