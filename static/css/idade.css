@@ -118,7 +118,7 @@ button:hover {
 .center-div .resultado {
     color: var(--branco);
     font-size: 1.5vw;
-    font-weight: lighter;
+    font-weight: bold;
     margin-bottom: 2vh;
 }
 .voltar {
@@ -130,6 +130,7 @@ button:hover {
     position: absolute;
     margin-top: 2vh;
     left: 57vw;
+    font-weight: bold;
 }
 
 .voltar:hover {
@@ -160,8 +161,8 @@ nav {
     justify-content: space-around;
 }
 .icon{
-    width: 7vw;
-    height: 7vw;
+    width: 6vw;
+    height: 6vw;
 }
 
 nav a {
@@ -221,120 +222,3 @@ footer p {
     margin-bottom: 2vh;
 }
 
-@media (max-width: 1200px) {
-    .center-div {
-        height: auto;
-        width: 80%;
-        padding: 3%;
-    }
-
-    .butão, .butão-2 {
-        width: 60%;
-    }
-
-    input {
-        width: 70%;
-    }
-}
-
-@media (max-width: 992px) {
-    .logo {
-        width: 15vw;
-    }
-
-    nav a {
-        font-size: 1.8vw;
-    }
-
-    .butão, .butão-2 {
-        font-size: 2vw;
-        width: 70%;
-    }
-
-    footer li {
-        font-size: 2.5vw;
-    }
-
-    footer h3 {
-        font-size: 3.5vw;
-    }
-
-    footer p {
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-    }
-
-    nav a {
-        font-size: 3vw;
-        margin: 1vh 0;
-    }
-
-    .center-div {
-        height: auto;
-        width: 90%;
-        padding: 5%;
-    }
-
-    input {
-        width: 90%;
-    }
-
-    .butão, .butão-2 {
-        width: 80%;
-        font-size: 2.5vw;
-    }
-
-    footer .container {
-        gap: 5vh;
-    }
-
-    footer li {
-        font-size: 2.5vw;
-    }
-
-    footer h3 {
-        font-size: 3.5vw;
-    }
-
-    footer p {
-        font-size: 2.5vw;
-    }
-}
-
-@media (max-width: 576px) {
-    .logo {
-        width: 20vw;
-    }
-
-    nav a {
-        font-size: 4vw;
-    }
-
-    .butão, .butão-2 {
-        font-size: 3vw;
-        width: 90%;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    footer li {
-        font-size: 3vw;
-    }
-
-    footer h3 {
-        font-size: 4.5vw;
-    }
-
-    footer p {
-        font-size: 3vw;
-    }
-}
